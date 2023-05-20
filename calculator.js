@@ -6,25 +6,6 @@ let operator = "";
 let second = NaN;
 let rahhh = true
 
-//      left, operator, right, equals
-// Example for 1 + 2 = 3
-// First we need the left hand side of the sum (1)
-// - Person types 1
-
-// Next we need the operator (+)
-// - Person types +
-// - You store the 1 into `first`
-// - You store the "+" into `operator`
-
-// Next we need the right hand side of the sum (2)
-// - Person types 2
-
-// Finally, we do the math
-// - Person types =
-// - You store the 2 into `second`
-// - You do the math (You know 1, "+", 2)
-//      - Log 3 to console
-
 let screen = document.getElementById("screen");
 function press(num) {
     if (rahhh){
@@ -45,6 +26,7 @@ function plus() {
     operator = "+";
     screen.value = "";
     // console.log("Plus: " + first);
+    rahhh = false;
 }
 
 function minus() {
@@ -53,6 +35,7 @@ function minus() {
     operator = "-";
     screen.value = "";
     // console.log("Minus: " + first);
+    rahhh = false;
 }
 
 function multiply() {
@@ -61,6 +44,7 @@ function multiply() {
     operator = "*";
     screen.value = "";
     // console.log("Multiply: " + first);
+    rahhh = false;
 }
 
 function divide() {
@@ -69,6 +53,7 @@ function divide() {
     operator = "/";
     screen.value = "";
     // console.log("Divide: " + first);
+    rahhh = false;
 }
 
 function equals() {
@@ -79,7 +64,7 @@ function equals() {
         // console.log("Your Equation Is Blank")
         return;
     }
-    rahhh = true
+    rahhh = true;
 
     second = parseFloat(screen.value);
     screen.value = "";
