@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+            Calculator
+            <div>
+                <div id="monitor">
+                    <p id="equation">0 + 0 =</p>
+                    <input readonly id="screen"/>
+                </div>
+                <div>
+                    <!-- All the Numbers -->
+                    <table>
+                        <tr>
+                            <td>
+                                <button onclick="press(7)">7</button> 
+                            </td>
+                            <td>
+                                <button onclick="press(8)">8</button>
+                            </td>
+                            <td>
+                                <button onclick="press(9)">9</button>
+                            </td>
+                            <td>
+                                <button class="symbols" onclick="plus()">+</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="press(4)">4</button>
+                            </td>
+                            <td>
+                                <button onclick="press(5)">5</button>
+                            </td>
+                            <td>
+                                <button onclick="press(6)">6</button>
+                            </td>
+                            <td>
+                                <button class="symbols" onclick="minus()">-</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="press(1)">1</button>
+                            </td>
+                            <td>
+                                <button onclick="press(2)">2</button>
+                            </td>
+                            <td>
+                                <button onclick="press(3)">3</button>
+                            </td>
+                            <td>
+                                <button class="symbols" onclick="multiply()">*</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="press(0)">0</button>
+                            </td>
+                            <td>
+                                <button onclick="decimal()">.</button>
+                            </td>
+                            <td>
+                                <button onclick="equals()">=</button>
+                            </td>
+                            <td>
+                                <button class="symbols" onclick="divide()">/</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button id="backspace" onclick="backspace()">Back</button>
+                            </td>
+                            <td colspan="2">
+                                <button id="clear" onclick="calculatorClear()">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>

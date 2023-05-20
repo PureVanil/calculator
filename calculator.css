@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgray;
+    padding: 4px;
+    font-family: 'Darumadrop One', cursive;
+}
+
+input {
+    width: 100%;
+    margin: 0;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+}
+
+table {
+    width: 450px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Darumadrop One', cursive;
+    background-color: #629971;
+}
+
+.symbols {
+    background-color: #49ce7e;
+}
+
+#backspace {
+    background-color: #88d6be;
+}
+
+#clear {
+    background-color: #368e6f;
+}
+
+#monitor {
+    height: 200px;
+    width: 450px;
+    background-color: #8effb5;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+#equation {
+    font-size: 25px;
+    margin: 0px;
+}
